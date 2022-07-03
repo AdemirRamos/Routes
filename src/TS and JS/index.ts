@@ -1,17 +1,17 @@
 class Route_controller {
     ID_getter(id: string) {
         if (id == 'home_page') {
-            let page1: string = window.location.href += 'homepage'
+            let page1: string = window.location.href += 'Home Page/'
             return window.open(page1) 
         }
 
         else if (id == 'gallery') {
-            let page2: string = window.location.href += 'gallery'
+            let page2: string = window.location.href += 'Gallery/'
             return window.open(page2)
         }
 
         else if (id == 'tailwind') {
-            let page3: string = window.location.href += 'tailwind'
+            let page3: string = window.location.href += 'Tailwind CSS/'
             return window.open(page3)
         }
     }
