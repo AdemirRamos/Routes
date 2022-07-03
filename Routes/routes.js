@@ -14,7 +14,7 @@ router.get('/gallery', (req, res) => {
     res.sendFile(path.join(__dirname, '../', 'Gallery/', 'index.html'))
 })
 
-router.get('/tailwind', (req, res) => {
+router.get('/Tailwind CSS', (req, res) => {
     res.sendFile(path.join(__dirname, '../', 'Tail/', 'index.html'))
 })
 
