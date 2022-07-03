@@ -2,15 +2,15 @@
 class Route_controller {
     ID_getter(id) {
         if (id == 'home_page') {
-            let page1 = window.location.href += 'homepage';
+            let page1 = window.location.href += 'Home Page/';
             return window.open(page1);
         }
         else if (id == 'gallery') {
-            let page2 = window.location.href += 'gallery';
+            let page2 = window.location.href += 'Gallery/';
             return window.open(page2);
         }
         else if (id == 'tailwind') {
-            let page3 = window.location.href += 'tailwind';
+            let page3 = window.location.href += 'Tailwind/';
             return window.open(page3);
         }
     }
