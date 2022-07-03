@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --purple: #93032E;
+    --pink: #EA7AF4;
+    --blue: #2F4858;
+    --orange: #E36414;
+    --green: #018E42;
+}
+
+body {
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+#center_image {
+    height: 25px;
+    width: 25px;
+    padding: 15px;
+    position: absolute;
+    left: 49%;
+}
+
+#center_image:hover {
+    background-color: var(--blue);
+}
+
+.image {
+    flex-direction: row;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.image:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.pageTop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15px;
+}
+
+.pageTop > a {
+    text-decoration: none;
+    color: var(--orange);
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    padding: 15px;
+}
+
+.pageTop > a:hover {
+    background-color: var(--green);
+}
+
+.article_setting {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    border-top: 1px solid black;
+    padding: 15px 15px 15px 0;
+    background-color: var(--purple);
+}
+
+.gallery1 {
+    position: absolute;
+    top: 25px;
+    left: -571px;
+    background-color: black;
+    width: 600px;
+    height: 150px;
+    padding-right: 15px;
+    display: flex;
+    transition: all 1s;
+}
+
+.gallery1 > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    font-size: 30px;
+}
+
+.gallery1 > p:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.gallery2 {
+    position: absolute;
+    top: 188px;
+    right: -555px;
+    background-color: black;
+    width: 600px;
+    height: 150px;
+    padding-right: 15px;
+    transition: all 1s;
+}
+
+.gallery2 > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
+    font-size: 30px;
+}
+
+.gallery2 > p#gallery2_p:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+#description {
+    position: absolute;
+    top: 36%;
+    left: 45px;
+    color: white;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px black;
+    height: 30%;
+    width: 545px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+
+.gallery2 > p#description:hover {
+    color: white;
+    cursor: pointer;
+}
+
+I've decided to remove this style just because, once the cursor leaves a thumbnail, the text will disappear.
+
+*/
+
+
+.gallery3 {
+    position: absolute;
+    top: 355px;
+    left: -571px;
+    background-color: black;
+    width: 600px;
+    height: 150px;
+    padding-right: 15px;
+    display: flex;
+    transition: all 1s;
+}
+
+.gallery3 > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+    font-size: 30px;
+}
+
+.gallery3 > p:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.modal_window {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modal_picture {
+    height: 500px;
+    width: 550px;
+    z-index: 1;
+    position: absolute;
+    top: 65px;
+    left: 400px;
+    display: none;
+}
+
+.x_span {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: none;
+}
+
+.modal_window > span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#modal_alt {
+    color: white;
+    text-align: justify;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    font-size: 17px;
+    position: absolute;
+    top: 585px;
+    left: 400px;
+    z-index: 1;
+    width: 550px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: var(--green); The "alt" gets interesting with this background, I won't keep it, though.*/
+    display: none;
+}
+
+::selection {
+    background-color: var(--pink);
+    color: var(--orange);
+    text-shadow: 1px 1px 1px black;
+}

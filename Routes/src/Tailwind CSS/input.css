@@ -1,0 +1,161 @@
+/*Watch: npx tailwindcss -i ./input.css -o ../../dist/Tail/output.css --watch*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back {
+    background-color: #D1345B;
+}
+
+.special-font {
+    font-family: cursive;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    height: 60px;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+#main, #repository, #about {
+    font-size: 17px;
+    color: #bbb;
+}
+
+#main:hover, #repository:hover, #about:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.height70 {
+    height: 70vh;
+}
+
+.margin100 {
+    margin-top: 200px;
+}
+
+.position-title {
+    position: absolute;
+    top: 18%;
+}
+
+.font-white {
+    color: white;
+    font-size: 28px;
+}
+
+#title, #container-text:hover {
+    color: #bbb;
+    text-shadow: 0px 0px 0px black;
+    transition: all 0.5s ease-in-out;
+}
+
+#title:hover, #container-text:hover {
+    cursor: pointer;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    transition: all 0.5s ease-in-out;
+}
+
+#box {
+    transition: all 0.5s ease-in-out;
+    font-weight: bold;
+    font-size: 47px;
+    width: 95vw;
+    outline: 10px solid #34D1BF;
+    color: orangered;
+    letter-spacing: 0px;
+}
+
+#box:hover {
+    transition: all 0.5s ease-in-out;
+    outline: 10px solid #800;
+    color: #3454D1;
+    cursor: pointer;
+    font-size: 47px;
+    letter-spacing: 55px;
+}
+
+#shake-container {
+    position: absolute;
+    top: 82%;
+}
+
+#container-text {
+    color: #bbb;
+    letter-spacing: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+#container-text:hover {
+    letter-spacing: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.shake:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-2px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(0deg);
+    }
+
+    60% {
+        transform: translate(-2px, 1px) rotate(-1deg);
+    }
+
+    70% {
+        transform: translate(2px, 1px) rotate(1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(0deg);
+    }
+}
+
+::selection {
+    background-color: #FAF33E;;
+    color: #3454D1;
+    text-shadow: 1px 1px 1px black;
+}
