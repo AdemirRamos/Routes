@@ -3,19 +3,19 @@ const path = require('path')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../', 'dist/', 'index.html'))
+    res.sendFile(path.join(__dirname, '../', 'index.html'))
 })
 
 router.get('/homepage', (req, res) => {
-    res.sendFile(path.join(__dirname, '../', 'dist/', 'Home Page/', 'index.html'))
+    res.sendFile(path.join(__dirname, '../', 'Home Page/', 'index.html'))
 })
 
 router.get('/gallery', (req, res) => {
-    res.sendFile(path.join(__dirname, '../', 'dist/', 'Gallery/', 'index.html'))
+    res.sendFile(path.join(__dirname, '../', 'Gallery/', 'index.html'))
 })
 
 router.get('/tailwind', (req, res) => {
-    res.sendFile(path.join(__dirname, '../', 'dist/', 'Tail/', 'index.html'))
+    res.sendFile(path.join(__dirname, '../', 'Tail/', 'index.html'))
 })
 
 module.exports = router
