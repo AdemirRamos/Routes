@@ -10,7 +10,7 @@ class Route_controller {
             return window.open(page2);
         }
         else if (id == 'tailwind') {
-            let page3 = window.location.href += 'Tailwind CSS/';
+            let page3 = window.location.href += 'Tail/';
             return window.open(page3);
         }
     }
