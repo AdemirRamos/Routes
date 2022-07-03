@@ -12,7 +12,7 @@ function background_images() {
     var item1 = document.getElementById('a1')
 
     item1.addEventListener('mouseenter', function() {
-        document.body.style.backgroundImage = "url('/Home Page/Pictures/p1.jpg')"
+        document.body.style.backgroundImage = "url('Pictures/p1.jpg')"
         section1.style.maxHeight = '500px'
 
         item1.addEventListener('mouseout', function() {
@@ -23,7 +23,7 @@ function background_images() {
     var item2 = document.getElementById('a2')
 
     item2.addEventListener('mouseenter', function() {
-        document.body.style.backgroundImage = "url('/Home Page/Pictures/p2.jpg')"
+        document.body.style.backgroundImage = "url('Pictures/p2.jpg')"
         section2.style.maxHeight = '500px'
 
         item2.addEventListener('mouseout', function() {
@@ -34,7 +34,7 @@ function background_images() {
     var item3 = document.getElementById('a3')
 
     item3.addEventListener('mouseenter', function() {
-        document.body.style.backgroundImage = "url('/Home Page/Pictures/p3.jpg')"
+        document.body.style.backgroundImage = "url('Pictures/p3.jpg')"
         section3.style.maxHeight = '500px'
 
         item3.addEventListener('mouseout', function() {
@@ -45,7 +45,7 @@ function background_images() {
     var item4 = document.getElementById('a4')
 
     item4.addEventListener('mouseenter', function() {
-        document.body.style.backgroundImage = "url('/Home Page/Pictures/p4.jpg')"
+        document.body.style.backgroundImage = "url('Pictures/p4.jpg')"
         section4.style.maxHeight = '500px'
 
         item4.addEventListener('mouseout', function() {
@@ -56,7 +56,7 @@ function background_images() {
     var item5 = document.getElementById('a5')
 
     item5.addEventListener('mouseenter', function() {
-        document.body.style.backgroundImage = "url('/Home Page/Pictures/p5.jpg')"
+        document.body.style.backgroundImage = "url('Pictures/p5.jpg')"
         section5.style.maxHeight = '500px'
 
         item5.addEventListener('mouseout', function() {
