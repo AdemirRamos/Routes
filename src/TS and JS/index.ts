@@ -35,4 +35,6 @@ const url = new Route_controller()
     }
 
     window.addEventListener('load', click)
+
+    Javascript Window: https://www.w3schools.com/js/js_window_location.asp
 */
